@@ -1,0 +1,219 @@
+
+body, html {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+    overflow-x: hidden;
+}
+    
+.parallax1 {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(img/indianclassrom.png), url(img/banner.png); /* Add the second image here */
+    background-color: rgba(255, 255, 255, 1);
+    background-size: cover; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.parallax1::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 100px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/banner.png); /* Add the overlay image here */
+    background-size: 1550px 100px; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -320px;
+    opacity: 0.7;
+    
+}
+
+.banner{
+    position: relative;
+    background-image: url(img/banner.png);
+    min-height: 40%;
+    top: 50px;
+}
+
+.parallax2 {
+    background-image: url(img/student.jpg);
+    min-height: 60%;
+}
+.parallax3 {
+    background-image: url(img/bulb.jpg);
+    min-height: 60%;
+}
+.parallax4 {
+    background-image: url(img/jar2.png);
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Important*/
+}
+
+.head {
+    position: absolute;
+    color: #fff;
+    font-size: 500%;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 2.0s ease, colorChange 4.0s ease forwards; /* Add colorChange animation */
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+@keyframes drop {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #9a9494;
+    }
+    100% {
+        color: rgb(244, 245, 239); /* Change color to red at the end of the animation */
+    }
+}
+
+.head:hover{
+    color:transparent;
+}
+.bottom {
+    position: relative;
+    color: #fff;
+    font-size: 500%;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 2.0s ease;
+    cursor: pointer;
+    left: 310px;
+    top: 100px;
+
+}
+
+
+section {
+    overflow: auto;
+    padding: 50px 80px;
+
+}
+
+footer{
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+@media (max-width:800px) {
+    .head{
+        font-size: 200%;
+    }
+   
+}
+
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    top: 600px;
+    left: 1250px;
+   }
+   
+   button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
+
+
