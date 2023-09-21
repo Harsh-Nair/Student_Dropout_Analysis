@@ -12,7 +12,7 @@ body, html {
 .parallax1 {
     position: relative;
     min-height: 100vh;
-    background-image: url(img/indianclassrom.png), url(img/banner.png); /* Add the second image here */
+    background-image: url(img/indianclassrom.png), url(img/banner.png);
     background-color: rgba(255, 255, 255, 1);
     background-size: cover; /* Adjust this as needed */
     background-repeat: no-repeat;
@@ -26,38 +26,42 @@ body, html {
     right: 100px;
     width: 100%;
     height: 100%;
-    background-image: url(img/banner.png); /* Add the overlay image here */
-    background-size: 1550px 100px; /* Adjust this as needed */
+    background-image: url(img/banner.png); 
+    background-size: 1550px 100px; 
     background-repeat: no-repeat;
     background-position: center;
-    top: -320px;
+    top: -350px;
     opacity: 0.7;
     
 }
 
-.banner{
-    position: relative;
-    background-image: url(img/banner.png);
-    min-height: 40%;
-    top: 50px;
-}
+
 
 .parallax2 {
     background-image: url(img/student.jpg);
     min-height: 60%;
 }
 .parallax3 {
-    background-image: url(img/bulb.jpg);
+    background-image: url(img/BG.png);
     min-height: 60%;
 }
 .parallax4 {
+    background-image: url(img/bulb.jpg);
+    min-height: 60%;
+}
+.parallax5 {
+    background-image: url(img/indianclassrom.jpg);
+    min-height: 60%;
+}
+.parallax6 {
     background-image: url(img/jar2.png);
-    min-height: 100%;
+    min-height: 80%;
 }
 
-.parallax1, .parallax2, .parallax3, .parallax4 {
+
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .parallax6 {
     position: relative;
-    opacity: 0.70;
+    opacity: 0.9;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,24 +81,10 @@ body, html {
     font-weight: bold;
     
 }
-
-@keyframes drop {
-    0% {
-        top: -100%;
-    }
-    100% {
-        top: 50%;
-    }
+.head:hover{
+    color:transparent;
 }
 
-@keyframes colorChange {
-    0% {
-        color: #9a9494;
-    }
-    100% {
-        color: rgb(244, 245, 239); /* Change color to red at the end of the animation */
-    }
-}
 
 .head:hover{
     color:transparent;
@@ -128,7 +118,7 @@ footer{
     height: 3vh;
     text-align: center;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-bottom: 2vh;
 }
 
 @media (max-width:800px) {
@@ -149,7 +139,7 @@ footer{
       transform: translateY(0px);
     }
   }
-  button {
+  /* button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -160,8 +150,6 @@ footer{
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border: none;
-    top: 600px;
-    left: 1250px;
    }
    
    button:after {
@@ -196,21 +184,8 @@ footer{
    button:hover span {
     color: #183153;
     animation: scaleUp 0.3s ease-in-out;
-   }
-   
-   @keyframes scaleUp {
-    0% {
-     transform: scale(1);
-    }
-   
-    50% {
-     transform: scale(0.95);
-    }
-   
-    100% {
-     transform: scale(1);
-    }
-   }
+   } */
+
    
 
 
