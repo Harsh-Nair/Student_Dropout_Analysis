@@ -180,7 +180,7 @@ p{
     padding-left: 2%;
 }
 button {
-    position: relative;
+    position: absolute;
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -192,8 +192,8 @@ button {
     font-size: inherit;
     font-family: inherit;
     position: relative;
-    top: 380px;
-    left: 650px;
+    top: 48vh;
+    left: 43vw;
    }
    
    button.learn-more {
