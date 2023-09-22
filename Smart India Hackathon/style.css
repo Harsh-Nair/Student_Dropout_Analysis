@@ -46,11 +46,11 @@ body, html {
     min-height: 70%;
 }
 .parallax4 {
-    background-image: url(img/bulb.jpg);
+    background-image: url(img/outcome3.png);
     min-height: 70%;
 }
 .parallax5 {
-    background-image: url(img/indianclassrom.jpg);
+    background-image: url(img/bulb.jpg);
     min-height: 70%;
 }
 .parallax6 {
@@ -191,6 +191,9 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    position: relative;
+    top: 450px;
+    left: 650px;
    }
    
    button.learn-more {
