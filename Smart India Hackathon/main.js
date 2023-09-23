@@ -68,7 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             myChart = new Chart(ctx, {
+<<<<<<< HEAD
                 type: 'bar', // Change the chart type as needed
+=======
+                type: 'line', // Change the chart type as needed
+>>>>>>> 170db0a3fbeaaf14e0808af6c078f328a0134144
                 data: {
                     labels: data.labels,
                     datasets: [
