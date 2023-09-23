@@ -1,0 +1,147 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+    background: url(img/Stonky.png) fixed; /* Set background-attachment to fixed */
+    background-size: cover;
+}
+img{
+    width: 1520px;
+}
+
+
+
+h3 {
+    position: relative;
+    top: 0vh;
+    left: 13px;
+    font-size: 50px;
+}
+.description{
+    font-size: 30px;
+    text-align: left;
+    max-width: 600px;
+    position: relative;
+    left: 1vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(0, 255, 255, 0.399);
+    border:2px solid ;
+    border-radius: 0.4em;
+}
+.graph-info{
+    font-size: 30px;
+    text-align: left;
+    background-color:rgba(0, 255, 255, 0.399);
+    border:2px solid ;
+    border-radius: 0.4em;
+    left: 1vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: -81vh;
+    left: -2.2px;
+    max-width: 1800px;
+}
+.graph1{
+    padding-left: 0%;
+}
+.graph1 img {
+    display: block;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    position: relative;
+    /* top: -120px; */
+    right: 1%;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.graph2 img {
+    display: block;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    position: relative;
+    /* top: -460px; */
+    /* left: 75%; */
+}
+
+.graph3 img {
+    display: block;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    position: relative;
+    top: -670px;
+    left: 54%;
+}
+
+.graph4 img {
+    display: block;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    position: relative;
+    top: -660px;
+    left: 54%;
+}
+.maingraph{
+    position: relative;
+    top: -93vh;
+    /* background-color: rgba(0, 255, 255, 0.399); */
+    background-color: rgba(0, 255, 255, 0.612);
+    padding: 10px;
+    max-width:700px;
+    left: 90vh;
+    max-height: 700px;
+    border: 2px solid;
+    border-radius: 0.7em;
+    
+        
+}
+button {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    position: relative;
+    top: -40vh;
+    left: 92vw;
+   }
+   
+   button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+   button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+a{
+text-decoration: none;
+}
