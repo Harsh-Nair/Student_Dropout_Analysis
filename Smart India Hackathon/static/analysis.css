@@ -1,6 +1,7 @@
 body, html {
-    height: 100%;
+    height: auto;
     margin: 0;
+    
     font-family: 'Ubuntu', sans-serif;
     line-height: 180%;
     color: #666;
@@ -9,7 +10,12 @@ body, html {
     position: relative;
     background: url(img/Stonky.png) fixed; 
     background-size: cover;
+    
 }
+body{
+    max-height: 100vh;
+}
+
 img{
     width: 1520px;
     height: 100px;
@@ -27,7 +33,8 @@ h3 {
 .description{
     font-size: 30px;
     text-align: left;
-    max-width: 600px;
+    max-width: 650px;
+    max-height: 700px;
     position: relative;
     left: 1vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,76 +43,29 @@ h3 {
     border-radius: 0.4em;
     padding-left: 1vw;
 }
-.graph-info{
-    font-size: 30px;
-    text-align: left;
-    background-color:rgba(0, 255, 255, 0.399);
-    border:2px solid ;
-    border-radius: 0.4em;
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between photos as needed */
     position: relative;
-    top: -81vh;
-    max-width: 1790px;
-    padding-left: 1vw;
-}
-.graph1{
-    padding-left: 0%;
-}
-.graph1 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    padding: 10px;
-}
-
-.graph2 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    padding: 10px;
-}
-
-.graph3 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    top: -690px;
-    left: 52%;
-}
-
-.graph4 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    top: -670px;
-    left: 52%;
-}
-.maingraph{
-    position: relative;
-    top: -93vh;
-    background-color: rgba(0, 255, 255, 0.612);
-    padding: 10px;
-    max-width:700px;
     left: 90vh;
-    max-height: 700px;
+    top: -94vh;
+    max-width: 1200px;
+    background-color: rgba(0, 255, 255, 0.556);
     border: 2px solid;
     border-radius: 0.7em;
-    padding-left: 1vw;
-    
-        
+    margin: 2px;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.grid-container img {
+    width: 400px;
+    height: 400px;
+}
+.large-image {
+    width: 100px; /* Adjust the size as needed, e.g., 200% to make it twice as large */
+    height: 120px;
 }
 button {
     display: flex;
@@ -144,3 +104,104 @@ button {
 a{
 text-decoration: none;
 }
+.graph-info{
+    font-size: 30px;
+    text-align: left;
+    background-color:rgba(0, 255, 255, 0.399);
+    border:2px solid ;
+    border-radius: 0.4em;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 21vh;
+    max-width: 1790px;
+    padding-left: 1vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+    color: rgba(54, 162, 235, 1);
+  }
+  .chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .chartCard {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: rgba(54, 162, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chartBox {
+    width: 1100px;
+    height:600px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+  }
+
+.category{
+    position: relative;
+    top: 3px;
+    left: 30px;
+}
+.class{
+    position: relative;
+    top: 3px;
+    left: 20px;
+}
+.year{
+        position: relative;
+        top: 3px;
+        left: 40px;
+}
+.category  select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .class select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .year select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .categories select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+  .age select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+  .year select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+#popover {
+    font-size: 14px;
+  }
