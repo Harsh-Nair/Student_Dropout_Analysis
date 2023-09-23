@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Selector</title>
+    <link rel="stylesheet" href="graph.css">
+</head>
+<body>
+    <div class="category">
+        <label for="categoryDropdown">Select Category:</label>
+        <select id="categoryDropdown" aria-label="Category Dropdown">
+            <option value="All Categories">All Category</option>
+            <option value="Scheduled Caste">SC</option>
+            <option value="Scheduled Tribe">ST</option>
+        </select>
+    </div>
+    <div class="class">
+        <label for="classDropdown">Select Class:</label>
+        <select id="classDropdown" aria-label="Class Dropdown">
+            <option value="Classes I-V">I to V</option>
+            <option value="Classes I-VIII">I to VIII</option>
+            <option value="Classes I-X">I to X</option>
+        </select>
+    </div>
+    <div class="year">
+        <label for="yearDropdown">Select Year:</label>
+        <select id="yearDropdown" aria-label="Year Dropdown">
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+        </select>
+    </div>
+    
+    <div class="chartCard">
+        <div class="chartBox">
+          <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

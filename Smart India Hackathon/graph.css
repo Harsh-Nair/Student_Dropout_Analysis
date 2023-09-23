@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+    color: rgba(54, 162, 235, 1);
+  }
+  .chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .chartCard {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: rgba(54, 162, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chartBox {
+    width: 1100px;
+    height:600px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+  }
+
+.category{
+    position: relative;
+    top: 3px;
+    left: 30px;
+}
+.class{
+    position: relative;
+    top: 3px;
+    left: 20px;
+}
+.year{
+        position: relative;
+        top: 3px;
+        left: 40px;
+}
+.category  select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .class select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .year select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .categories select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+  .age select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+  .year select:focus {
+    outline: none;
+    border-color: #7e9bf0;
+    box-shadow: 0 0 5px #7e9bf0;
+  }
+#popover {
+    font-size: 14px;
+  }

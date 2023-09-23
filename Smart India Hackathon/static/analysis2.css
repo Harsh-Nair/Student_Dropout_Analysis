@@ -33,7 +33,8 @@ h3 {
 .description{
     font-size: 30px;
     text-align: left;
-    max-width: 600px;
+    max-width: 650px;
+    max-height: 700px;
     position: relative;
     left: 1vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -42,79 +43,29 @@ h3 {
     border-radius: 0.4em;
     padding-left: 1vw;
 }
-.graph-info{
-    font-size: 30px;
-    text-align: left;
-    background-color:rgba(0, 255, 255, 0.399);
-    border:2px solid ;
-    border-radius: 0.4em;
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between photos as needed */
     position: relative;
-    top: -81vh;
-    max-width: 1790px;
-    padding-left: 1vw;
-}
-.graph1{
-    padding-left: 0%;
-}
-.graph2{
-    padding: 0%;
-}
-.graph1 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    padding: 10px;
-}
-
-.graph2 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    padding: 10px;
-}
-
-.graph3 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    top: -690px;
-    left: 52%;
-}
-
-.graph4 img {
-    display: block;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    position: relative;
-    top: -670px;
-    left: 52%;
-}
-.maingraph{
-    position: relative;
-    top: -93vh;
-    background-color: rgba(0, 255, 255, 0.612);
-    padding: 10px;
-    max-width:700px;
     left: 90vh;
-    max-height: 700px;
+    top: -94vh;
+    max-width: 1200px;
+    background-color: rgba(0, 255, 255, 0.556);
     border: 2px solid;
     border-radius: 0.7em;
-    padding-left: 1vw;
-    
-        
+    margin: 2px;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.grid-container img {
+    width: 400px;
+    height: 400px;
+}
+.large-image {
+    width: 100px; /* Adjust the size as needed, e.g., 200% to make it twice as large */
+    height: 120px;
 }
 button {
     display: flex;
@@ -153,3 +104,17 @@ button {
 a{
 text-decoration: none;
 }
+.graph-info{
+    font-size: 30px;
+    text-align: left;
+    background-color:rgba(0, 255, 255, 0.399);
+    border:2px solid ;
+    border-radius: 0.4em;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 21vh;
+    max-width: 1790px;
+    padding-left: 1vw;
+}
+
